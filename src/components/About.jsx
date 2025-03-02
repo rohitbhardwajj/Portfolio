@@ -113,7 +113,7 @@ const About = () => {
   });
 
   return (
-    <section id="about" className="relative w-full min-h-screen mx-auto py-20">
+    <section id="about" className="relative w-full h-auto mx-auto py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -136,7 +136,7 @@ const About = () => {
             className="w-full md:w-1/3 flex justify-center"
           >
             <img
-              src="./public/me.jpg" // Replace with the path to your image
+              src="./public/me.jpg" // Replace with the correct path to your image
               alt="Rohit Bhardwaj"
               className="rounded-2xl w-full max-w-md h-auto object-cover shadow-lg"
             />
