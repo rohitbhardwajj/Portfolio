@@ -136,7 +136,7 @@ const About = () => {
             className="w-full md:w-1/3 flex justify-center"
           >
             <img
-              src="./public/me.jpg" // Replace with the correct path to your image
+              src="./src/constants/me.jpg" // Replace with the correct path to your image
               alt="Rohit Bhardwaj"
               className="rounded-2xl w-full max-w-md h-auto object-cover shadow-lg"
             />
