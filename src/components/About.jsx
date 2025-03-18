@@ -126,9 +126,9 @@ const About = () => {
           <h2 className="text-white text-4xl sm:text-5xl font-bold">Hey, I’m Rohit!</h2>
         </motion.div>
 
-        {/* Image and Introduction Section */}
+    
         <div className="flex flex-col md:flex-row items-center gap-10">
-          {/* Image Section */}
+         
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
@@ -136,9 +136,9 @@ const About = () => {
             className="w-full md:w-1/3 flex justify-center"
           >
             <img
-              src="./assets/me.jpg" // Replace with the correct path to your image
+              src="./assets/me.jpg" 
               alt="Rohit Bhardwaj"
-              className="rounded-2xl w-full max-w-md h-auto object-cover shadow-lg"
+              className="rounded-2xl w-full max-w-md h-22 object-cover shadow-lg"
             />
           </motion.div>
 
