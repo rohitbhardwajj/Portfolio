@@ -136,7 +136,7 @@ const About = () => {
             className="w-full md:w-1/3 flex justify-center"
           >
             <img
-              src="./assets/me.jpg" 
+              src="./public/me.jpg" 
               alt="Rohit Bhardwaj"
               className="rounded-2xl w-full max-w-md h-22 object-cover shadow-lg"
             />
