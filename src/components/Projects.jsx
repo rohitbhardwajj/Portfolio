@@ -5,14 +5,13 @@ import { projects } from '../constants';
 import { FiGithub, FiExternalLink, FiX } from 'react-icons/fi';
 import { Tilt } from 'react-tilt';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link, category, setSelectedProject }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_demo_link, category, setSelectedProject }) => {
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
 
-  // Placeholder image URL
-  const imageUrl = `https://source.unsplash.com/random/600x400?${name.replace(/\s+/g, '-').toLowerCase()}`;
+  const imageUrl = image || `https://picsum.photos/600/400?random=${index}`;
 
   return (
     <motion.div
@@ -29,14 +28,18 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
         }}
         className="project-card bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full"
       >
-        <div className="relative w-full h-[230px]" onClick={() => setSelectedProject({ name, description, tags, image: imageUrl, source_code_link })}>
+        <div className="relative w-full h-[230px]" onClick={() => setSelectedProject({ name, description, tags, image: imageUrl, source_code_link, live_demo_link })}>
           <img
             src={imageUrl}
             alt={name}
             className="w-full h-full object-cover rounded-2xl cursor-pointer"
+            onError={(e) => {
+              e.target.src = "https://via.placeholder.com/600x400"; // Fallback image
+            }}
           />
 
-          <div className="absolute inset-0 flex justify-end m-3">
+          <div className="absolute inset-0 flex justify-end m-3 gap-2">
+            {/* GitHub Button */}
             <div
               onClick={(e) => {
                 e.stopPropagation();
@@ -45,6 +48,17 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <FiGithub className="w-1/2 h-1/2 text-white" />
+            </div>
+
+            {/* Live Demo Button */}
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(live_demo_link, "_blank");
+              }}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <FiExternalLink className="w-1/2 h-1/2 text-white" />
             </div>
           </div>
         </div>
@@ -126,7 +140,9 @@ const ProjectModal = ({ project, onClose }) => {
             <FiGithub /> View Code
           </a>
           <a
-            href="#"
+            href={project.live_demo_link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-lg"
           >
             <FiExternalLink /> Live Demo

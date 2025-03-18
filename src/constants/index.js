@@ -129,28 +129,18 @@ export const testimonials = [
 
 export const projects = [
   {
-    name: "E-Commerce Platform",
-    description:
-      "A comprehensive e-commerce platform with product listings, shopping cart, user authentication, and payment processing capabilities.",
+    name: "AI-Assistant-Smart-Interactive-AI-Powered-Chatbot",
+    description: "I’m excited to showcase my latest project—a sleek and intelligent AI assistant crafted using React and powered by seamless API integration. This project reflects my dedication to mastering modern web development and creating dynamic, user-friendly applications",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "Api", color: "green-text-gradient" },
+      { name: "Web dev ", color: "pink-text-gradient" },
     ],
-    image: "carrent",
-    source_code_link: "https://github.com/",
+    image: "https://png.pngtree.com/thumb_back/fh260/background/20230519/pngtree-futuristic-robot-with-a-black-background-image_2625564.jpg",
+    source_code_link: "https://github.com/rohitbhardwajj/AI-Assistant-Smart-Interactive-AI-Powered-Chatbot.git",
+    live_demo_link: "https://ai-assistant-smart-interactive-ai-powered-chatbot.vercel.app/", // Add your live demo link here
     category: "Web Dev",
   },
-  
 ];
 
 export const skills = [
