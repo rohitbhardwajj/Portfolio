@@ -154,6 +154,24 @@ export const projects = [
     live_demo_link: "https://smart-gem-bot-rohit-bhardwajj.vercel.app/", // Add your live demo link here
     category: "Web Dev",
   },
+  {
+    name: "HubProfileScout",
+    description: "🔍 A sleek and simple web app to find and view GitHub user profiles using the GitHub public API.
+💡 Built with HTML, CSS, and JavaScript.
+⚡ Displays user avatar, name, bio, public repos, followers, location, and profile link.
+🎨 Includes loading animation, responsive UI, and dynamic data rendering.
+
+",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "Api", color: "green-text-gradient" },
+      { name: "Web dev ", color: "pink-text-gradient" },
+    ],
+    image: "https://www.shutterstock.com/image-vector/3d-artificial-intelligence-digital-brain-600nw-2288372371.jpg",
+    source_code_link: "https://github.com/rohitbhardwajj/SmartGemBot.git",
+    live_demo_link: "https://smart-gem-bot-rohit-bhardwajj.vercel.app/", // Add your live demo link here
+    category: "Web Dev",
+  },
 ];
 
 export const skills = [
