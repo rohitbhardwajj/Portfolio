@@ -166,6 +166,19 @@ export const projects = [
     source_code_link: "https://github.com/rohitbhardwajj/HubProfileScout.git",
     live_demo_link: "https://hub-profile-scout-git-main-rohitbhardwajjs-projects.vercel.app/", // Add your live demo link here
     category: "Web Dev",
+  },
+  {
+    name: "Speakify🗣️",
+    description: "A simple Text-to-Speech tool that converts your written words into clear, spoken voice.",
+    tags: [
+      { name: "javascript", color: "blue-text-gradient" },
+      { name: "Api", color: "green-text-gradient" },
+      { name: "Web dev ", color: "pink-text-gradient" },
+    ],
+    image: "https://blog.unisr.it/hubfs/Immagini%20Blog/Immagini%20Blog%20ENG/Voice_world_day_expert_San_Raffaele_University%20%281%29.png",
+    source_code_link: "https://github.com/rohitbhardwajj/Speakify.git",
+    live_demo_link: "https://speakify-blsj.vercel.app/", // Add your live demo link here
+    category: "Web Dev",
   }
 ];
 
