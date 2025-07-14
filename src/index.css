@@ -224,7 +224,6 @@ html.light {
   font-size: 12px;
 }
 
-/* Scroll indicator */
 .scroll-indicator {
   animation: bounce 2s infinite;
 }
