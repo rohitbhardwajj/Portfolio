@@ -203,6 +203,17 @@ export const projects = [
     image: "https://www.couchbase.com/blog/wp-content/uploads/2017/02/docker-compose.png",
     source_code_link: "https://github.com/rohitbhardwajj/DockMyMeal--DEVOPS-PROJECT-1.git",
     category: "Devops",
+  },
+  {
+    name: "Deploy Todo-App Using kubernetes",
+    description: "A minimal TODO web application deployed on Kubernetes using Deployment and Service configuration.",
+    tags: [
+      { name: "devops", color: "blue-text-gradient" },
+      { name: "Kubernetes", color: "green-text-gradient" },
+    ],
+    image: "https://a.storyblok.com/f/189401/1080x608/daa7ee5484/what_is_k8s.png",
+    source_code_link: "https://github.com/rohitbhardwajj/Devope-project-2---Kubernetes-.git",
+    category: "Devops",
   }
 ];
 
