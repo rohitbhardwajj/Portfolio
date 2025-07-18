@@ -192,6 +192,17 @@ export const projects = [
     source_code_link: "https://github.com/rohitbhardwajj/TaskVault.git",
     live_demo_link: "https://task-tracker-frontend-indol.vercel.app/", // Add your live demo link here
     category: "Web Dev",
+  },
+  {
+    name: "Dockerized Food Delivery App",
+    description: "DineDocker is a full-stack Food Delivery Web App built with the MERN Stack (MongoDB, Express.js, React.js, Node.js) and fully containerized using Docker and Docker Compose. This project is designed to demonstrate modern DevOps practices such as containerization, orchestration, environment management, and scalable deployment.",
+    tags: [
+      { name: "devops", color: "blue-text-gradient" },
+      { name: "Docker-Compose", color: "green-text-gradient" },
+    ],
+    image: "https://www.couchbase.com/blog/wp-content/uploads/2017/02/docker-compose.png",
+    source_code_link: "https://github.com/rohitbhardwajj/DockMyMeal--DEVOPS-PROJECT-1.git",
+    category: "Devops",
   }
 ];
 

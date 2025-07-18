@@ -161,7 +161,7 @@ const Projects = () => {
     triggerOnce: true,
   });
 
-  const categories = ['All', 'Web Dev', 'UI/UX', 'JavaScript'];
+  const categories = ['All', 'Web Dev', 'Devops', ];
 
   const filteredProjects = activeCategory === 'All'
     ? projects
