@@ -214,6 +214,17 @@ export const projects = [
     image: "https://a.storyblok.com/f/189401/1080x608/daa7ee5484/what_is_k8s.png",
     source_code_link: "https://github.com/rohitbhardwajj/Devope-project-2---Kubernetes-.git",
     category: "Devops",
+  },
+  {
+    name: "Ci/CD Pipeline with Jenkins",
+    description: "This pipeline is written in Jenkins Declarative syntax and automates the end-to-end process of building, testing, and deploying the TaskVault project using Docker and Jenkins.",
+    tags: [
+      { name: "devops", color: "blue-text-gradient" },
+      { name: "Jenkins", color: "green-text-gradient" },
+    ],
+    image: "https://assets.apidog.com/blog/2024/09/ci-cd.png",
+    source_code_link: "https://github.com/rohitbhardwajj/Jenkins-pipeline----devops-project-.git",
+    category: "Devops",
   }
 ];
 
