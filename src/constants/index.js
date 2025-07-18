@@ -195,86 +195,57 @@ export const projects = [
   }
 ];
 
-export const skills = [
-  {
-    name: "Frontend",
-    icon: "html",
-    percentage: 95,
-  },
-  {
-    name: "Backend",
-    icon: "css",
-    percentage: 90,
-  },
-  {
-    name: "DBMS",
-    icon: "javascript",
-    percentage: 95,
-  },
-  {
-    name: "Devops",
-    icon: "typescript",
-    percentage: 85,
-  },
-  {
-    name: "React JS",
-    icon: "reactjs",
-    percentage: 95,
-  },
-  {
-    name: "Redux",
-    icon: "redux",
-    percentage: 85,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "tailwind",
-    percentage: 90,
-  },
-  {
-    name: "Node JS",
-    icon: "nodejs",
-    percentage: 80,
-  },
-  {
-    name: "MongoDB",
-    icon: "mongodb",
-    percentage: 75,
-  },
-  {
-    name: "Three JS",
-    icon: "threejs",
-    percentage: 70,
-  },
-  {
-    name: "git",
-    icon: "git",
-    percentage: 85,
-  },
-  {
-    name: "figma",
-    icon: "figma",
-    percentage: 80,
-  },
-  {
-    name: "docker",
-    icon: "docker",
-    percentage: 65,
-  },
-];
+
 
 export const skillCategories = [
   {
+    title: "DevOps",
+    skills: [
+      "Linux", "Docker", "Jenkins", "Shell-Scripting", "AWS", "Kubernetes", "Git",
+      "GitHub", "Python", "Ansible", "Terraform", "Prometheus", "Grafana",
+      "SonarQube", "Helm", "ArgoCD"
+    ]
+  },
+  {
     title: "Frontend Development",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Tailwind CSS", "SASS", "Webpack"]
+    skills: [
+      "HTML", "CSS", "JavaScript", "React", "Redux", "Tailwind CSS", "SCSS",
+      "Bootstrap"
+    ]
   },
   {
     title: "Backend Development",
-    skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "Firebase", "REST API", "GraphQL"]
+    skills: [
+      "Node.js", "Express", "MongoDB", "MySQL", "Firebase", "REST API"
+    ]
+  },
+  {
+    title: "Animation & UI Libraries",
+    skills: [
+      "Framer Motion", "GSAP", "Swiper.js", "Locomotive.js", "Lenis.js",
+      "LottieFiles", "Reactbits"
+    ]
+  },
+  {
+    title: "DevSecOps Tools",
+    skills: [
+      "Trivy", "OWASP", "SonarQube", "Snyk", "Clair", "Kube-bench", "Kube-hunter"
+    ]
   },
   {
     title: "Tools & Technologies",
-    skills: ["Git", "GitHub", "VS Code", "Docker", "AWS", "Netlify", "Vercel", "Figma"]
+    skills: [
+      "Git", "GitHub", "VS Code", "Cursor", "Docker", "AWS",
+      "Netlify", "Vercel", "Postman", "MongoDB Compass"
+    ]
+  },
+  {
+    title: "Data Structures & Algorithms",
+    skills: [
+      "Arrays", "Linked Lists", "Stacks & Queues", "Trees", "Graphs",
+      "Dynamic Programming", "Greedy Algorithms", "Sorting & Searching",
+      "Hashing", "Recursion"
+    ]
   }
 ];
 
