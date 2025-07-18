@@ -223,7 +223,6 @@ html.light {
   color: var(--electric-cyan);
   font-size: 12px;
 }
-
 .scroll-indicator {
   animation: bounce 2s infinite;
 }

@@ -179,6 +179,19 @@ export const projects = [
     source_code_link: "https://github.com/rohitbhardwajj/Speakify.git",
     live_demo_link: "https://speakify-blsj.vercel.app/", // Add your live demo link here
     category: "Web Dev",
+  },
+  {
+    name: "Task-Tracker",
+    description: "A full-stack Task Tracker app where users can add, delete, and mark tasks as complete, with data stored securely using MongoDB. Built using React, Node.js, Express, and Axios for seamless API communication.",
+    tags: [
+      { name: "javascript", color: "blue-text-gradient" },
+      { name: "Mern", color: "green-text-gradient" },
+      { name: "Web dev ", color: "pink-text-gradient" },
+    ],
+    image: "https://static.vecteezy.com/system/resources/previews/045/475/368/non_2x/3d-white-paper-task-management-todo-check-list-vector.jpg",
+    source_code_link: "https://github.com/rohitbhardwajj/TaskVault.git",
+    live_demo_link: "https://task-tracker-frontend-indol.vercel.app/", // Add your live demo link here
+    category: "Web Dev",
   }
 ];
 
