@@ -154,6 +154,18 @@ export const projects = [
     live_demo_link: "https://smart-gem-bot-rohit-bhardwajj.vercel.app/", // Add your live demo link here
     category: "Web Dev",
   },
+    {
+    name: "🎧Moodify Player",
+    description: "Moodify Player is an AI-powered music streaming app built with the MERN stack. It detects your facial mood using smart vision and plays songs that match your emotion. 🎶 Seamlessly blends technology and feelings to give you the perfect vibe every time! ",
+    tags: [
+      { name: "MERN", color: "blue-text-gradient" },
+      { name: "WEB DEV", color: "green-text-gradient" },
+    ],
+    image: "https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?cs=srgb&dl=pexels-ellis-1389429.jpg&fm=jpg",
+    source_code_link: "https://github.com/rohitbhardwajj/-Moodify-AI-Mood-Music-Player.git",
+     live_demo_link: "https://moodify-ai-mood-music-player-lp4y.vercel.app/", 
+    category: "Web Dev",
+  },
   {
     name: "HubProfileScout",
     description: "A stylish GitHub Profile Finder to instantly explore any user's public info with a clean UI and smooth loading effects.",
@@ -225,7 +237,8 @@ export const projects = [
     image: "https://assets.apidog.com/blog/2024/09/ci-cd.png",
     source_code_link: "https://github.com/rohitbhardwajj/Jenkins-pipeline----devops-project-.git",
     category: "Devops",
-  }
+  },
+
 ];
 
 
