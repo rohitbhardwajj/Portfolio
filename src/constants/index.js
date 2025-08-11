@@ -142,6 +142,19 @@ export const projects = [
     category: "Web Dev",
   },
   {
+    name: "InstaLite AI Captions",
+    description: "A modern MERN stack social media app that automatically generates creative captions for your posts using AI. Simply upload an image, and the AI instantly crafts a catchy caption to make your posts stand out effortlessly. Perfect blend of full-stack development and AI-powered user experience",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "Ai", color: "green-text-gradient" },
+      { name: "MERN ", color: "pink-text-gradient" },
+    ],
+    image: "https://static.wixstatic.com/media/c794c9_bcfc0941204c44b588b9aa1e5019f9a2~mv2.png/v1/fill/w_568,h_378,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c794c9_bcfc0941204c44b588b9aa1e5019f9a2~mv2.png",
+    source_code_link: "https://github.com/rohitbhardwajj/insta-lite-ai-captions.git",
+    live_demo_link: "https://insta-lite-ai-captions.vercel.app/", // Add your live demo link here
+    category: "Web Dev",
+  },
+  {
     name: "Gemini Chat Pro",
     description: "Gemini Chat Pro – Your AI-powered chatbot for instant, intelligent conversations! 💬⚡ Powered by Google Gemini AI, this chat app delivers fast, accurate, and engaging responses with a seamless typing effect. Stop typing anytime, clear chats instantly, and enjoy a smooth chat experience! ✨🔮",
     tags: [
