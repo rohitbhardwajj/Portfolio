@@ -13,7 +13,7 @@ const Footer = () => {
             className="mb-6 md:mb-0"
           >
             <h2 className="text-white text-2xl font-bold">Rohit Bhardwaj</h2>
-            <p className="text-secondary mt-1">Web Developer & Devops Engineer</p>
+            <p className="text-secondary mt-1">Devops & Cloud Engineer</p>
           </motion.div>
           
           <motion.div

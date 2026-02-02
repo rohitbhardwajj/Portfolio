@@ -29,8 +29,6 @@ const Hero = () => {
                   sequence={[
                     'Rohit Bhardwaj',
                     1000,
-                    'a Web Developer',
-                    1000,
                     'a Devops engineer',
                     1000,
                     'a Problem Solver',
@@ -49,7 +47,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="text-secondary text-center mt-6 text-lg max-w-3xl"
             >
-             I build modern, responsive websites using the latest technologies. I specialize in creating visually stunning and user-friendly digital experiences that are fast, efficient, and problem-solving. My goal is to blend creativity with functionality to deliver impactful web solutions.
+             I build scalable, secure, and automated cloud infrastructure using modern DevOps practices and tools. I specialize in CI/CD pipelines, containerization, and cloud deployments to deliver reliable, high-performance applications. My goal is to bridge development and operations by blending automation, security, and efficiency to create robust production-ready systems.
             </motion.p>
 
             <motion.div

@@ -23,27 +23,27 @@ export const navLinks = [
 
 export const services = [
   {
-    title: "Web Developer",
+    title: "DevOps Engineer",
+    icon: "devops",
+    description: "I automate, monitor, and optimize CI/CD pipelines, containers, and cloud infrastructure to deliver secure, scalable, and production-ready systems ."
+  },
+  {
+    title: "Full Stack Development",
     icon: "web",
-    description: "I create responsive and performant web applications using modern technologies and best practices."
+    description: "I build responsive and high-performance web applications with modern Frontend and Backend technologies, ensuring seamless user experiences."
   },
   {
-    title: "React Specialist",
+    title: "Cloud & Infrastructure",
     icon: "mobile",
-    description: "I build interactive user interfaces with React, focusing on component reusability and state management."
+    description: "I design, deploy, and manage cloud environments (AWS, Azure) for reliable, scalable, and cost-efficient infrastructure."
   },
   {
-    title: "Backend Developer",
+    title: "Automation & CI/CD",
     icon: "backend",
-    description: "I develop robust server-side applications with Node.js, Express, and various database technologies."
-  },
-  {
-    "title": "DevOps Engineer",
-    "icon": "devops",
-    "description": "I streamline development and deployment processes, ensuring fast, secure, and reliable software delivery through automation and cloud solutions."
+    description: "I streamline development workflows by creating automated pipelines, integrating testing, deployment, and monitoring tools for faster delivery."
   }
-  
 ];
+
 
 export const experiences = [
   {
@@ -128,7 +128,66 @@ export const experiences = [
 // ];
 
 export const projects = [
+   {
+    name: "DevSecOps CI/CD Pipeline with Kubernetes Deployment",
+     description: "This project showcases a complete DevSecOps pipeline integrating CI/CD, security checks, containerization, and monitoring. Code pushed to GitHub triggers Jenkins CI for OWASP dependency checks, SonarQube quality analysis, and Trivy scans. Docker images are built and deployed to Kubernetes via ArgoCD. The system is continuously monitored with Prometheus and Grafana, with email notifications for any issues. It highlights practical skills in automation, DevSecOps, cloud-native deployment, and infrastructure monitoring."
+,
+    tags: [
+      { name: "devops", color: "blue-text-gradient" },
+      { name: "Ci/Cd", color: "green-text-gradient" },
+    ],
+    image: "https://github.com/DevMadhup/Wanderlust-Mega-Project/blob/main/Assets/DevSecOps+GitOps.gif?raw=true",
+    source_code_link: "https://github.com/rohitbhardwajj/Final-project.git",
+    category: "Devops",
+  },
+   {
+    name: "Dockerized Food Delivery App",
+    description: "DineDocker is a full-stack Food Delivery Web App built with the MERN Stack (MongoDB, Express.js, React.js, Node.js) and fully containerized using Docker and Docker Compose. This project is designed to demonstrate modern DevOps practices such as containerization, orchestration, environment management, and scalable deployment.",
+    tags: [
+      { name: "devops", color: "blue-text-gradient" },
+      { name: "Docker-Compose", color: "green-text-gradient" },
+    ],
+    image: "https://www.couchbase.com/blog/wp-content/uploads/2017/02/docker-compose.png",
+    source_code_link: "https://github.com/rohitbhardwajj/DockMyMeal--DEVOPS-PROJECT-1.git",
+    category: "Devops",
+  },
   {
+    name: "Deploy Todo-App Using kubernetes",
+    description: "A minimal TODO web application deployed on Kubernetes using Deployment and Service configuration.",
+    tags: [
+      { name: "devops", color: "blue-text-gradient" },
+      { name: "Kubernetes", color: "green-text-gradient" },
+    ],
+    image: "https://a.storyblok.com/f/189401/1080x608/daa7ee5484/what_is_k8s.png",
+    source_code_link: "https://github.com/rohitbhardwajj/Devope-project-2---Kubernetes-.git",
+    category: "Devops",
+  },
+  {
+    name: "Ci/CD Pipeline with Jenkins",
+    description: "This pipeline is written in Jenkins Declarative syntax and automates the end-to-end process of building, testing, and deploying the TaskVault project using Docker and Jenkins.",
+    tags: [
+      { name: "devops", color: "blue-text-gradient" },
+      { name: "Jenkins", color: "green-text-gradient" },
+    ],
+    image: "https://assets.apidog.com/blog/2024/09/ci-cd.png",
+    source_code_link: "https://github.com/rohitbhardwajj/Jenkins-pipeline----devops-project-.git",
+    category: "Devops",
+  },
+  {
+    
+    name: " BrainStack Chat – Backend",
+    description: "A ChatGPT-like backend built to understand how AI systems remember past conversations using short-term memory, long-term memory, and vector databases. This project explores GPT-style memory, real-time chat, and secure authentication.",
+    tags: [
+      { name: "Backend", color: "blue-text-gradient" },
+      { name: "Api", color: "green-text-gradient" },
+      { name: "Web dev ", color: "pink-text-gradient" },
+    ],
+    image: "https://cdn.sanity.io/images/sy1jschh/production/55d6a8baff534e58acd9db3d3fec3514a4354163-1200x628.png?w=3840&q=80&fit=clip&auto=format",
+    source_code_link: "https://github.com/rohitbhardwajj/BrainStack-Chat.git",
+    category: "Web Dev",
+  },
+  {
+    
     name: "AI-Assistant-Smart-Interactive-AI-Powered-Chatbot",
     description: "I’m excited to showcase my latest project—a sleek and intelligent AI assistant crafted using React and powered by seamless API integration. This project reflects my dedication to mastering modern web development and creating dynamic, user-friendly applications",
     tags: [
@@ -218,39 +277,7 @@ export const projects = [
     live_demo_link: "https://task-tracker-frontend-indol.vercel.app/", // Add your live demo link here
     category: "Web Dev",
   },
-  {
-    name: "Dockerized Food Delivery App",
-    description: "DineDocker is a full-stack Food Delivery Web App built with the MERN Stack (MongoDB, Express.js, React.js, Node.js) and fully containerized using Docker and Docker Compose. This project is designed to demonstrate modern DevOps practices such as containerization, orchestration, environment management, and scalable deployment.",
-    tags: [
-      { name: "devops", color: "blue-text-gradient" },
-      { name: "Docker-Compose", color: "green-text-gradient" },
-    ],
-    image: "https://www.couchbase.com/blog/wp-content/uploads/2017/02/docker-compose.png",
-    source_code_link: "https://github.com/rohitbhardwajj/DockMyMeal--DEVOPS-PROJECT-1.git",
-    category: "Devops",
-  },
-  {
-    name: "Deploy Todo-App Using kubernetes",
-    description: "A minimal TODO web application deployed on Kubernetes using Deployment and Service configuration.",
-    tags: [
-      { name: "devops", color: "blue-text-gradient" },
-      { name: "Kubernetes", color: "green-text-gradient" },
-    ],
-    image: "https://a.storyblok.com/f/189401/1080x608/daa7ee5484/what_is_k8s.png",
-    source_code_link: "https://github.com/rohitbhardwajj/Devope-project-2---Kubernetes-.git",
-    category: "Devops",
-  },
-  {
-    name: "Ci/CD Pipeline with Jenkins",
-    description: "This pipeline is written in Jenkins Declarative syntax and automates the end-to-end process of building, testing, and deploying the TaskVault project using Docker and Jenkins.",
-    tags: [
-      { name: "devops", color: "blue-text-gradient" },
-      { name: "Jenkins", color: "green-text-gradient" },
-    ],
-    image: "https://assets.apidog.com/blog/2024/09/ci-cd.png",
-    source_code_link: "https://github.com/rohitbhardwajj/Jenkins-pipeline----devops-project-.git",
-    category: "Devops",
-  },
+ 
 
 ];
 
@@ -311,18 +338,18 @@ export const skillCategories = [
 export const stats = [
   {
     title: "Months of Learning",
-    value: 12, // Apne learning duration ke according update kar sakte ho
+    value: 24, // Apne learning duration ke according update kar sakte ho
   },
   {
     title: "Projects Built",
-    value: 10, // Apne practice aur portfolio projects ka count likho
+    value: 30 // Apne practice aur portfolio projects ka count likho
   },
   {
     title: "Technologies Explored",
-    value: 15, // Jo bhi tech stack explore kiya hai uska estimate likho
+    value: 30 // Jo bhi tech stack explore kiya hai uska estimate likho
   },
   {
     title: "Code Commits",
-    value: 500, // GitHub ya daily practice ke commits ka estimate likh sakte ho
+    value: 600, // GitHub ya daily practice ke commits ka estimate likh sakte ho
   }
 ];

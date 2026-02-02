@@ -150,7 +150,11 @@ const About = () => {
             className="w-full md:w-2/3"
           >
             <p className="mt-4 text-secondary text-lg max-w-3xl mx-auto">
-              I’m currently pursuing my BCA from DAV Centenary College, and over time, I’ve developed a strong passion for technology. I’ve explored multiple domains, including Frontend, Backend, DBMS, DSA, and even DevOps. The process of building, optimizing, and automating systems excites me, and I’m always eager to dive deeper into new technologies. <br />  My ultimate goal is to become a DevOps Engineer, ensuring smooth workflows between development and operations through automation and efficiency. While I might not have industry experience yet, my projects speak for themselves—showcasing my technical expertise, problem-solving skills, and ability to adapt to challenges. I stay updated with the latest trends in Cloud Computing, CI/CD Pipelines, Containerization, and Infrastructure Automation to sharpen my skills further. <br />  I love learning, experimenting with new technologies, and collaborating with like-minded individuals. Whether it’s solving complex problems or bringing innovative ideas to life, I give my 100% to everything I do. One thing’s for sure—wherever I go, I’ll make an impact! 💥
+             I’m a passionate DevOps enthusiast with a BCA background and hands-on experience in building, automating, and optimizing scalable systems. I’ve worked on projects involving CI/CD pipelines, Docker, Kubernetes, AWS, and Infrastructure Automation, focusing on creating reliable, production-ready environments.
+
+While I’m yet to gain formal industry experience, my projects showcase my technical skills, problem-solving mindset, and adaptability. My goal is to become a DevOps Engineer who bridges development and operations through automation, security, and efficiency.
+
+I love exploring new technologies, experimenting with tools, and collaborating with like-minded individuals. Whether it’s streamlining workflows or tackling complex infrastructure challenges, I give my 100% to deliver impactful solutions.
             </p>
           </motion.div>
         </div>
