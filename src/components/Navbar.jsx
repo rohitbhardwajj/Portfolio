@@ -52,7 +52,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             Rohit Bhardwaj &nbsp;
-            <span className='hidden sm:block'>| Developer</span>
+            <span className='hidden sm:block'>| Devops & Cloud Engineer</span>
           </motion.p>
         </Link>
 
