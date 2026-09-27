@@ -4,7 +4,7 @@ name: React CI
 # Ye workflow tab chalega jab uat branch par commit/push hoga
 on:
   push:
-    branches: [uat]
+    branches: [main]
 
 # Agar same branch par naya commit push ho, purana chal raha run cancel ho jaye
 concurrency:
