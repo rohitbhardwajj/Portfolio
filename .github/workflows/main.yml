@@ -1,0 +1,91 @@
+
+name: React CI
+
+# Ye workflow tab chalega jab uat branch par commit/push hoga
+on:
+  push:
+    branches: [uat]
+
+# Agar same branch par naya commit push ho, purana chal raha run cancel ho jaye
+concurrency:
+  group: react-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-test-scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # --- Code quality ---
+      - name: Lint
+        run: npm run lint
+
+      # --- Unit tests ---
+      - name: Unit tests
+        run: npm test -- --watchAll=false
+
+      # --- React production build check ---
+      - name: Build
+        run: npm run build
+
+  
+
+      # --- Dependency scanning ---
+      - name: Trivy dependency scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          severity: 'CRITICAL,HIGH'
+          exit-code: '1'
+
+      # --- OWASP Dependency-Check ---
+      - name: Cache OWASP Dependency-Check NVD database
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository/org/owasp/dependency-check-data
+          key: owasp-dc-db-${{ runner.os }}
+          restore-keys: |
+            owasp-dc-db-
+
+      - name: OWASP Dependency-Check
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: 'react-frontend'
+          path: '.'
+          format: 'HTML'
+          out: 'reports/dependency-check'
+          args: >
+            --failOnCVSS 7
+            --enableRetired
+
+      - name: Upload Dependency-Check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-check-report
+          path: reports/dependency-check
+
+      # --- Upload build artifact ---
+      - name: Upload React build
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: react-build
+          path: build/
+
